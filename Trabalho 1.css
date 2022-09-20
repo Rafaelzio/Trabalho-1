@@ -1,0 +1,282 @@
+//Trabalho Rafael Berger e Pedro Leite
+
+int done = 0;
+while (done < 2)
+{
+    while (done == 0)
+    {
+        Console.WriteLine("Rafaelzio's Quiz");
+        Console.WriteLine("Press <enter> to start");
+
+        while (Console.ReadKey().Key != ConsoleKey.Enter)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Bad command");
+        }
+
+        int right = 0;
+        int wrong = 0;
+
+        Console.WriteLine("Question 1");
+        Console.WriteLine("What is the eighth letter of the alphabet?");
+        Console.WriteLine("<1> F");
+        Console.WriteLine("<2> G");
+        Console.WriteLine("<3> H");
+
+        int answer = Convert.ToInt32(Console.ReadLine());
+        if (answer == 3)
+        {
+            Console.WriteLine("Good answer.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Bad answer.");
+
+        }
+        Console.WriteLine("Question 2");
+        Console.WriteLine("Which of these countries is not located in America?");
+        Console.WriteLine("<1> Jamaica");
+        Console.WriteLine("<2> Angola");
+        Console.WriteLine("<3> Chile");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 2)
+        {
+            Console.WriteLine("Correct, Angola is located in Africa.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Sorry, that's an American country.");
+
+        }
+        Console.WriteLine("Question 3");
+        Console.WriteLine("When did the cold war end?");
+        Console.WriteLine("<1> 1918");
+        Console.WriteLine("<2> 1945");
+        Console.WriteLine("<3> 1991");
+        Console.WriteLine("<4> When summer came.");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 3)
+        {
+            Console.WriteLine("Congratulations, you are old!");
+            right++;
+        }
+        if (answer == 4)
+        {
+            Console.WriteLine("Very funny!");
+            wrong++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Nope, get your wars straight.");
+
+        }
+        Console.WriteLine("Question 4");
+        Console.WriteLine("What's the quizz creator last name?");
+        Console.WriteLine("<1> Angelini");
+        Console.WriteLine("<2> Berger");
+        Console.WriteLine("<3> Galon");
+        Console.WriteLine("<4> Lopes");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 2)
+        {
+            Console.WriteLine("Checking the attendance sheet is cheating.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Wrong student.");
+
+        }
+        Console.WriteLine("Question 5");
+        Console.WriteLine("What's 1+1?");
+        Console.WriteLine("<1> 2");
+        Console.WriteLine("<2> 1");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 1)
+        {
+            Console.WriteLine("Nice dodge!");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Trick question!");
+
+        }
+
+
+        Console.WriteLine("You got " + right + " questions right");
+        Console.WriteLine("You got " + wrong + " questions wrong");
+        if (right == 0)
+        {
+            Console.WriteLine("None? Maybe try again, type <1> to restart, or <2> to close the quiz");
+        }
+        if (right == 5)
+        {
+            Console.WriteLine("Well done! Type <1> to play again or <2> to close the quiz");
+        }
+        else
+        {
+            Console.WriteLine("Not quite a prefect score, type <1> if you want to try again or type <2> to close the quiz");
+        }
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 1)
+        {
+            done++;
+        }
+        if (answer == 2)
+        {
+            done = done + 2;
+        }
+        else { }
+    }
+    while (done == 1)
+    {
+        Console.WriteLine("Rafaelzio's Quiz");
+        Console.WriteLine("Press <enter> to start");
+
+        while (Console.ReadKey().Key != ConsoleKey.Enter)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Bad command");
+        }
+
+        int right = 0;
+        int wrong = 0;
+
+        Console.WriteLine("Question 3");
+        Console.WriteLine("When did the cold war end?");
+        Console.WriteLine("<1> 1918");
+        Console.WriteLine("<2> 1945");
+        Console.WriteLine("<3> 1991");
+        Console.WriteLine("<4> When summer came.");
+        int answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 3)
+        {
+            Console.WriteLine("Congratulations, you are old!");
+            right++;
+        }
+        if (answer == 4)
+        {
+            Console.WriteLine("Very funny!");
+            wrong++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Nope, get your wars straight.");
+
+        }
+        Console.WriteLine("Question 5");
+        Console.WriteLine("What's 1+1?");
+        Console.WriteLine("<1> 2");
+        Console.WriteLine("<2> 1");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 1)
+        {
+            Console.WriteLine("Nice dodge!");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Trick question!");
+
+        }
+        Console.WriteLine("Question 4");
+        Console.WriteLine("What's the quizz creator last name?");
+        Console.WriteLine("<1> Angelini");
+        Console.WriteLine("<2> Berger");
+        Console.WriteLine("<3> Galon");
+        Console.WriteLine("<4> Lopes");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 2)
+        {
+            Console.WriteLine("Checking the attendance sheet is cheating.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Wrong student.");
+
+        }
+        Console.WriteLine("Question 2");
+        Console.WriteLine("Which of these countries is not located in America?");
+        Console.WriteLine("<1> Jamaica");
+        Console.WriteLine("<2> Angola");
+        Console.WriteLine("<3> Chile");
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 2)
+        {
+            Console.WriteLine("Correct, Angola is located in Africa.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Sorry, that's an American country.");
+
+        }
+        Console.WriteLine("Question 1");
+        Console.WriteLine("What is the eighth letter of the alphabet?");
+        Console.WriteLine("<1> F");
+        Console.WriteLine("<2> G");
+        Console.WriteLine("<3> H");
+
+        answer = Convert.ToInt32(Console.ReadLine());
+        if (answer == 3)
+        {
+            Console.WriteLine("Good answer.");
+            right++;
+        }
+        else
+        {
+            wrong++;
+            Console.WriteLine("Bad answer.");
+
+        }
+
+
+        Console.WriteLine("You got " + right + " questions right");
+        Console.WriteLine("You got " + wrong + " questions wrong");
+        if (right == 0)
+        {
+            Console.WriteLine("None? Maybe try again, type <1> to restart, or <2> to close the quiz");
+        }
+        if (right == 5)
+        {
+            Console.WriteLine("Well done! Type <1> to play again or <2> to close the quiz");
+        }
+        else
+        {
+            Console.WriteLine("Not quite a prefect score, type <1> if you want to try again or type <2> to close the quiz");
+        }
+        answer = Convert.ToInt32(Console.ReadLine());
+
+        if (answer == 1)
+        {
+            done--;
+        }
+        if (answer == 2)
+        {
+            done = done + 2;
+        }
+        else { }
+    }
+}
